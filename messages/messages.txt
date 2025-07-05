@@ -1,0 +1,4 @@
+{"name": "Jasper Lin", "age": 34, "email": "jasper.lin@example.com", "isActive": true, "address": {"street": "456 Market Street", "city": "San Francisco", "state": "CA", "postalCode": "94105"}, "roles": ["admin", "editor"], "metadata": {"createdAt": "2023-09-15T14:23:00Z", "tags": ["premium", "beta-tester"], "loginCount": 42}, "preferences": {"newsletter": false, "notifications": {"email": true, "sms": false, "push": true}}}
+{"name": "Foo", "Age": {"int": 12}}
+{"name": "Bar", "Age": {"string": "12"}}
+{"sport": "Football"}
