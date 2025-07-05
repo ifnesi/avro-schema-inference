@@ -1,5 +1,6 @@
 # Avro Schema Inference Demo
 This project demonstrates how to automatically infer an Avro schema from example JSON messages using the Confluent Schema Registry Maven Plugin.
+
 For more details: https://docs.confluent.io/platform/current/schema-registry/develop/maven-plugin.html#schema-registry-derive-schema
 
 ## 🔧 What It Does
