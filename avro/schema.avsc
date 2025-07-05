@@ -1,0 +1,115 @@
+{
+  "schemas" : [ {
+    "schema" : {
+      "type" : "record",
+      "name" : "Schema",
+      "fields" : [ {
+        "name" : "address",
+        "type" : {
+          "type" : "record",
+          "name" : "address",
+          "fields" : [ {
+            "name" : "city",
+            "type" : "string"
+          }, {
+            "name" : "postalCode",
+            "type" : "string"
+          }, {
+            "name" : "state",
+            "type" : "string"
+          }, {
+            "name" : "street",
+            "type" : "string"
+          } ]
+        }
+      }, {
+        "name" : "age",
+        "type" : "int"
+      }, {
+        "name" : "email",
+        "type" : "string"
+      }, {
+        "name" : "isActive",
+        "type" : "boolean"
+      }, {
+        "name" : "metadata",
+        "type" : {
+          "type" : "record",
+          "name" : "metadata",
+          "fields" : [ {
+            "name" : "createdAt",
+            "type" : "string"
+          }, {
+            "name" : "loginCount",
+            "type" : "int"
+          }, {
+            "name" : "tags",
+            "type" : {
+              "type" : "array",
+              "items" : "string"
+            }
+          } ]
+        }
+      }, {
+        "name" : "name",
+        "type" : "string"
+      }, {
+        "name" : "preferences",
+        "type" : {
+          "type" : "record",
+          "name" : "preferences",
+          "fields" : [ {
+            "name" : "newsletter",
+            "type" : "boolean"
+          }, {
+            "name" : "notifications",
+            "type" : {
+              "type" : "record",
+              "name" : "notifications",
+              "fields" : [ {
+                "name" : "email",
+                "type" : "boolean"
+              }, {
+                "name" : "push",
+                "type" : "boolean"
+              }, {
+                "name" : "sms",
+                "type" : "boolean"
+              } ]
+            }
+          } ]
+        }
+      }, {
+        "name" : "roles",
+        "type" : {
+          "type" : "array",
+          "items" : "string"
+        }
+      } ]
+    },
+    "messagesMatched" : [ 0 ]
+  }, {
+    "schema" : {
+      "type" : "record",
+      "name" : "Schema",
+      "fields" : [ {
+        "name" : "Age",
+        "type" : [ "int", "string" ]
+      }, {
+        "name" : "name",
+        "type" : "string"
+      } ]
+    },
+    "messagesMatched" : [ 1, 2 ]
+  }, {
+    "schema" : {
+      "type" : "record",
+      "name" : "Schema",
+      "fields" : [ {
+        "name" : "sport",
+        "type" : "string"
+      } ]
+    },
+    "messagesMatched" : [ 3 ]
+  } ]
+}
