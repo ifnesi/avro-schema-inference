@@ -219,7 +219,7 @@ Inferred Schema(s):
 }
 ```
 
-The inferred schema will be saved to `avro/schema.avsc`.
+The inferred schema(s) will be saved to `avro/schema.avsc`.
 
 ## 🔗 Requirements
  - Java 17+
