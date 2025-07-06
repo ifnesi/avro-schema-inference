@@ -6,8 +6,11 @@ For more details: https://docs.confluent.io/platform/current/schema-registry/dev
 ## 🔧 What It Does
 Using the `schema-registry:derive-schema` goal, this Maven setup:
  - Reads JSON messages from `messages/message.txt` (one JSON object per line)
+   - You can use your own payload file, just to make sure to adjust the `pom.xml` accordingly (`<messagePath>messages/messages.txt</messagePath>`)
  - Infers the corresponding Avro schema
+   - It also works with `json` and `protobuf` as the schema type, update the `pom.xml` as needed (`<schemaType>avro</schemaType>`)
  - Writes the result to `avro/schema.avsc`
+   - Feel free to choose your own output location, update the `pom.xml` as required (`<outputPath>avro/schema.avsc</outputPath>`)
 
 ## 📁 Project Structure
 ```sh
