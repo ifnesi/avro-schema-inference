@@ -22,6 +22,11 @@ schema-inference/
     └── schema.avsc     # Generated Avro schema
 ```
 
+## 🔗 Requirements
+ - Java 17+
+ - Maven
+ - Internet access to download Confluent dependencies
+
 ## ▶️ How to Run
 Make sure Maven is installed, then run:
 ```sh
@@ -221,7 +226,3 @@ Inferred Schema(s):
 
 The inferred schema(s) will be saved to `avro/schema.avsc`.
 
-## 🔗 Requirements
- - Java 17+
- - Maven
- - Internet access to download Confluent dependencies
