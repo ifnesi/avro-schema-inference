@@ -29,6 +29,14 @@ Make sure Maven is installed, then run:
 ```
 
 Example:
+The input JSON messages are ( as per `messages/messages.txt` -- again, one per line):
+```sh
+{"name": "Jasper Lin", "age": 34, "email": "jasper.lin@example.com", "isActive": true, "address": {"street": "456 Market Street", "city": "San Francisco", "state": "CA", "postalCode": "94105"}, "roles": ["admin", "editor"], "metadata": {"createdAt": "2023-09-15T14:23:00Z", "tags": ["premium", "beta-tester"], "loginCount": 42}, "preferences": {"newsletter": false, "notifications": {"email": true, "sms": false, "push": true}}}
+{"name": "Foo", "Age": {"int": 12}}
+{"name": "Bar", "Age": {"string": "12"}}
+{"sport": "Football"}
+```
+
 ```sh
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.10/libexec/lib/guice-5.1.0-classes.jar)
